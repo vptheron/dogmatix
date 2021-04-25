@@ -1,13 +1,14 @@
 defmodule Dogmatix.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
   @name "Dogmatix"
   @source_url "https://github.com/vptheron/dogmatix"
 
   def project do
     [
       app: :dogmatix,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
@@ -53,8 +54,8 @@ defmodule Dogmatix.MixProject do
 
   defp docs do
     [
+      source_ref: "v#{@version}",
       main: @name,
-      # logo: "assets/dogmatix.png",
       extras: ["README.md", "CHANGELOG.md"]
     ]
   end
