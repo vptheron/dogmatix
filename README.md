@@ -1,5 +1,9 @@
 # Dogmatix
 
+![](https://github.com/vptheron/dogmatix/workflows/CI/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/vptheron/dogmatix/badge.svg?branch=master)](https://coveralls.io/github/vptheron/dogmatix?branch=master)
+[![Hex.pm](https://img.shields.io/hexpm/v/dogmatix.svg)](https://hex.pm/packages/dogmatix)
+
 > A StatsD/DogStatsD client for Elixir.
 
 Dogmatix is a StatsD/DogStatsD client build in Elixir.  It is primarily designed to support the protocol and extensions provided by the [DataDog agent][datadog], but works with any StatsD-compatible server.
